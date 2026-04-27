@@ -1,0 +1,17 @@
+{
+  "name": "hoa_sync_discord",
+  "version": "1.0.0",
+  "main": "bot/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@discordjs/collection": "^1.2.0",
+    "@discordjs/rest": "^1.0.1",
+    "discord-api-types": "^0.38.47",
+    "discord.js": "^13.17.1"
+  }
+}

@@ -1,0 +1,5 @@
+RegisterNetEvent('hoa_sync_discord:client:heal', function ()
+    local player = PlayerPedId()
+    local maxHealth = GetPedMaxHealth(player)
+    SetEntityHealth(player, maxHealth)
+end)

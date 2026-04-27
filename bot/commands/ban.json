@@ -1,0 +1,36 @@
+{
+    "expires": [
+        {
+            "name": "永久",
+            "value": 2147483647
+        },
+        {
+            "name": "1 MIN",
+            "value": 60
+        },
+        {
+            "name": "10 MIN",
+            "value": 600
+        },
+        {
+            "name": "1 HOUR",
+            "value": 3600
+        },
+        {
+            "name": "3 HOUR",
+            "value": 10800
+        },
+        {
+            "name": "6 HOUR",
+            "value": 21600
+        },
+        {
+            "name": "12 HOUR",
+            "value": 43200
+        },
+        {
+            "name": "24 HOUR",
+            "value": 90000
+        }
+    ]
+}
