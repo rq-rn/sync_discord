@@ -53,6 +53,25 @@ async function setupCommands(client) {
 
 async function commandInteraction(interaction) {
     const commandName = interaction.commandName;
+    const guild = interaction.guild;
+    const user = await guild.members.fetch(interaction.user.id);
+    const roles = user.roles.cache.map(role => role.id);
+
+    let allowed = false;
+    for (const id of Config.ALLOWED_ROLES) {
+        if (roles.includes(id)) {
+            allowed = true;
+            continue;
+        }
+    }
+
+    if (!allowed) {
+        await interaction.reply({
+            content: '❌ このコマンドは使用できません。許可されたロールが必要です。',
+            ephemeral: true
+        })
+        return;
+    }
 
     const command = Commands.get(commandName);
     if (!command) return;
